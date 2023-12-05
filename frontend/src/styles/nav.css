@@ -1,0 +1,39 @@
+.nav {
+    top: 45%;
+}
+
+.nav-list {
+    padding: 0;
+    width: 100%;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-list__container {
+    width: 100%;
+    position: absolute;
+}
+
+.nav-list__item {
+    display: block;
+    font-size: calc(1px + 4vw);
+    font-family: sans-serif;
+}
+
+.nav-list__link {
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: #333;
+}
+
+@media only screen and (min-width: 768px) {
+    .nav-list {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .nav {
+        top: 50%;
+    }
+}

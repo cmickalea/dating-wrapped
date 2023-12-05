@@ -1,0 +1,11 @@
+.home__container {
+    text-align: center;
+    font-family: sans-serif;
+    width: 100%;
+    top: 40%;
+}
+
+.home__header {
+    font-size: clamp(1.2rem, 5vw, 4rem);
+    width: 80%;
+}

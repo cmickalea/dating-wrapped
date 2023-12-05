@@ -1,0 +1,13 @@
+.dashboard__header {
+margin: 1rem 2rem 2rem;
+}
+
+.dates__container {
+    display: flex;
+    justify-content: flex-end;
+    width: 90%;
+}
+
+.date__card--02 {
+    margin: 0 1rem;
+}

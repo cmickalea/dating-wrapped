@@ -1,5 +1,13 @@
 const registerUser = (req, res) => {
-    res.json({message: 'who you dated huh'})
+    res.json({message: 'sign up'})
 }
 
-export {registerUser};
+const getUser = (req, res) => {
+    res.json({message: 'see your stuff'})
+}
+
+const login = (req, res) => {
+    res.json({message: 'login'})
+}
+
+export {registerUser, getUser, login};

@@ -18,7 +18,7 @@ connectToDB();
 
 // routes
 
-app.use('/', userRoutes)
+app.use('/api', userRoutes)
 
 // listen for PORT
 app.listen(port, () => console.log(`server started on port ${port}...`.magenta));

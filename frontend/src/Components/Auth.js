@@ -32,6 +32,7 @@ const Auth = () => {
                     />
                 </div>
             </div>
+            <button type="button" class="btn btn-success">login</button>
         </div>
     );
 };

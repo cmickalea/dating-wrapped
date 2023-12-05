@@ -1,6 +1,7 @@
 import express, { json } from "express";
 import colors from 'colors';
 import cors from "cors";
+import cookieParser from "cookie-parser";
 import connectToDB from './db/conn.js';
 import userRoutes from './routes/userRoutes.js';
 import "dotenv/config.js";
@@ -9,9 +10,11 @@ const app = express();
 const port = process.env.PORT || 4040;
 
 // middlewares
-app.use(cors());
 app.use(json());
+app.use(express.urlencoded({extended: false}));
+app.use(cors());
 app.use(express.json())
+app.use(cookieParser())
 
 // Connect to database
 connectToDB();
